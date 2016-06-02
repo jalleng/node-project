@@ -10,7 +10,7 @@ const expect = chai.expect;
 const request = chai.request;
 
 process.env.MONGODB_URI = 'mongodb://localhost/test_db';
-require('../index');
+require('../server');
 
 describe('Testing CRUD routes IceCream', () => {
   after((done) => {

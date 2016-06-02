@@ -11,7 +11,7 @@ const request = chai.request;
 //const dbPort = process.env.MONGOLAB_URI;
 
 process.env.MONGOLAB_URI = 'mongodb://localhost/test_db';
-require('../index');
+require('../server');
 
 describe('Testing CRUD routes MilkShake', () => {
   after((done) => {
